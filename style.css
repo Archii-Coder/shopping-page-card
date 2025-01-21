@@ -1,0 +1,146 @@
+body {
+  font-family: sans-serif;
+  background-color: #f1f5f6;
+}
+.flex {
+  display: flex;
+}
+.flex-between {
+  justify-content: space-between;
+}
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+.gap-10 {
+  gap: 10px;
+}
+.gap-5 {
+  gap: 5px;
+}
+.count-down-bg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: #dd3842;
+  border-radius: 2px;
+  width: 45px;
+  height: 30px;
+  color: white;
+}
+.background-white {
+  background-color: white;
+}
+.best-prices-section .banner-img {
+  width: 40%;
+}
+.best-prices-section .product-card {
+  padding: 20px;
+  min-width: 25%;
+  width: 100%;
+  background: white;
+}
+.color-red {
+  color: red;
+  text-transform: uppercase;
+}
+.color-white {
+  color: white;
+}
+.background-red {
+  background-color: rgb(202, 53, 53);
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+
+.product-card {
+  max-width: 300px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.product-image-container {
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%; /* This creates a 1:1 aspect ratio */
+  position: relative;
+  overflow: hidden;
+}
+
+.product-image-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* This ensures the image covers the container without distortion */
+}
+.discount {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  z-index: 1;
+  color: white;
+  padding: 5px 25px;
+  font-size: 15px;
+  line-height: 1.2;
+}
+.discount p {
+  margin: 0;
+  padding: 0;
+}
+.product-title {
+  font-size: 20px;
+  font-weight: 400;
+}
+.product-info {
+  left: 0;
+  right: 0;
+  bottom: -50px;
+  padding: 10px;
+  margin: 0;
+}
+.product-card:hover .product-info {
+  bottom: 0;
+}
+.product-card:hover .add-to-cart {
+  opacity: 1; /* check what is it for? */
+}
+.add-to-cart {
+  text-transform: capitalize;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  height: 40px;
+  background-color: #2b38d1;
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 20px;
+  position: relative;
+  opacity: 0;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+.transition-default {
+  transition: all 0.5s ease-in-out;
+}
+.transition-1s {
+  transition: all 1.5s ease-in-out;
+}
